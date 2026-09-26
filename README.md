@@ -1,5 +1,10 @@
 # Credit Risk Scoring System
+# Credit Risk Scoring System
 
+![CI](https://github.com/Karan6528/credit-risk-project/actions/workflows/ci.yml/badge.svg)
+
+An end-to-end credit default prediction system, built to show the full
+lifecycle of an ML product — not just a notebook that ends at `model.fit()`.
 An end-to-end credit default prediction system, built to show the full
 lifecycle of an ML product — not just a notebook that ends at `model.fit()`.
 
