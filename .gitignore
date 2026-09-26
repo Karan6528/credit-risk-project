@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+mlruns/
+mlartifacts/
+.venv/
+venv/
+*.egg-info/
+
+# Generated data & artifacts (regenerate locally, don't commit)
+data/credit_data.csv
+data/recent_applicants.csv
+models/*.pkl
+reports/*.png
+reports/*.html
+reports/*.json
+
+.env
+.DS_Store
