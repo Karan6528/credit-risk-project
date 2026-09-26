@@ -164,10 +164,11 @@ def run(data_path: str, experiment_name: str = "credit-risk"):
             os.makedirs("models", exist_ok=True)
             import joblib
             joblib.dump(calibrated, "models/model.pkl")
+       
     else:
         print("xgboost not installed -- skipping challenger model. `pip install xgboost` to enable.")
 
-        os.makedirs("reports", exist_ok=True)
+    os.makedirs("reports", exist_ok=True)
     with open("reports/training_results.json", "w") as f:
         json.dump(results, f, indent=2)
 
