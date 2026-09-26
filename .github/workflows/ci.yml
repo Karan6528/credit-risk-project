@@ -34,5 +34,20 @@ jobs:
     needs: test
     steps:
       - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate synthetic data
+        run: python data/generate_synthetic_data.py --n 5000 --out data/credit_data.csv
+
+      - name: Train model
+        run: python src/train.py --data data/credit_data.csv
+
       - name: Build Docker image
         run: docker build -t credit-risk-api .
