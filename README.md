@@ -1,5 +1,4 @@
 # Credit Risk Scoring System
-# Credit Risk Scoring System
 
 ![CI](https://github.com/Karan6528/credit-risk-project/actions/workflows/ci.yml/badge.svg)
 
