@@ -167,11 +167,11 @@ def run(data_path: str, experiment_name: str = "credit-risk"):
     else:
         print("xgboost not installed -- skipping challenger model. `pip install xgboost` to enable.")
 
+        os.makedirs("reports", exist_ok=True)
     with open("reports/training_results.json", "w") as f:
         json.dump(results, f, indent=2)
 
     return results
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
